@@ -1,0 +1,9 @@
+
+send           send a message to current channel
+set channel    set channel by index or id
+set guild      set guild by index or id
+list guilds
+list channels
+clear          clear console
+exit           exit program
+help           hey, that's me

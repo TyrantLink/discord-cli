@@ -5,7 +5,6 @@ from aioconsole import ainput
 from os import system,getenv
 from dotenv import load_dotenv
 
-
 load_dotenv()
 
 class base(discord.Client):
@@ -50,6 +49,8 @@ class base(discord.Client):
         case 'clear': system('clear'); print('console cleared.')
         # case 'relog': self.logout(); await sleep(5); self.start()
         case 'exit': print('exiting...'); exit()
+        case 'help':
+          with open('help.message','r') as m: print(m.read())
         case '': pass
         case _: print('unknown command')
 
